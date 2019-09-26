@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="brandCell" rowHeight="115" id="6Qk-iV-Mtm" customClass="BrandTableViewCell" customModule="BMF" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="115"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Qk-iV-Mtm" id="67T-Ej-QnC">
+                <rect key="frame" x="0.0" y="0.0" width="344" height="114.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RNL-kZ-s7V" userLabel="Cell Content View">
+                        <rect key="frame" x="20" y="16.5" width="304" height="82"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="amu-No-6I0">
+                                <rect key="frame" x="8" y="16" width="46" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="40a-XB-zot"/>
+                                    <constraint firstAttribute="width" constant="46" id="qoo-6V-7ft"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="v9b-qE-86Y">
+                                <rect key="frame" x="62" y="16" width="237" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tEp-JY-XU0">
+                                        <rect key="frame" x="0.0" y="0.0" width="237" height="50"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="amu-No-6I0" firstAttribute="leading" secondItem="RNL-kZ-s7V" secondAttribute="leading" constant="8" id="0iN-Oc-Ki4"/>
+                            <constraint firstItem="amu-No-6I0" firstAttribute="top" secondItem="RNL-kZ-s7V" secondAttribute="top" constant="16" id="858-dD-aFf"/>
+                            <constraint firstItem="v9b-qE-86Y" firstAttribute="top" secondItem="amu-No-6I0" secondAttribute="top" id="D1U-ym-lBx"/>
+                            <constraint firstAttribute="trailing" secondItem="v9b-qE-86Y" secondAttribute="trailing" constant="5" id="JAY-0C-x8j"/>
+                            <constraint firstAttribute="height" constant="82" id="Oac-k2-xOc"/>
+                            <constraint firstAttribute="bottom" secondItem="amu-No-6I0" secondAttribute="bottom" constant="16" id="bA2-gv-xns"/>
+                            <constraint firstItem="v9b-qE-86Y" firstAttribute="bottom" secondItem="amu-No-6I0" secondAttribute="bottom" id="wfd-On-80u"/>
+                            <constraint firstItem="v9b-qE-86Y" firstAttribute="leading" secondItem="amu-No-6I0" secondAttribute="trailing" constant="8" id="wjW-O2-eVl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RNL-kZ-s7V" firstAttribute="centerX" secondItem="67T-Ej-QnC" secondAttribute="centerX" id="DRy-80-w3b"/>
+                    <constraint firstItem="RNL-kZ-s7V" firstAttribute="centerY" secondItem="67T-Ej-QnC" secondAttribute="centerY" id="aF0-n3-rTU"/>
+                    <constraint firstItem="RNL-kZ-s7V" firstAttribute="leading" secondItem="67T-Ej-QnC" secondAttribute="leading" constant="20" id="cXf-W5-HSa"/>
+                    <constraint firstAttribute="trailing" secondItem="RNL-kZ-s7V" secondAttribute="trailing" constant="20" id="ptK-k3-XUU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="pK1-R7-iAh"/>
+            <connections>
+                <outlet property="categoryImageview" destination="amu-No-6I0" id="XwN-85-TGo"/>
+                <outlet property="categoryName" destination="tEp-JY-XU0" id="8uu-ew-6L9"/>
+                <outlet property="cellContentView" destination="RNL-kZ-s7V" id="RfU-0u-J5J"/>
+            </connections>
+            <point key="canvasLocation" x="-441" y="73"/>
+        </tableViewCell>
+    </objects>
+</document>

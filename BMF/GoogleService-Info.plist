@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1061385528952-ck2gvu8lfmpvblmtdv8nbkjk2r4ddr3s.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1061385528952-ck2gvu8lfmpvblmtdv8nbkjk2r4ddr3s</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBTEA4XXISwn9rTn8sIC_gwD6USg7_jNPw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1061385528952</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.afiq.BMF</string>
+	<key>PROJECT_ID</key>
+	<string>buy-muslim-first-6db9b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>buy-muslim-first-6db9b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1061385528952:ios:084e10227094f9af4eef8d</string>
+	<key>DATABASE_URL</key>
+	<string>https://buy-muslim-first-6db9b.firebaseio.com</string>
+</dict>
+</plist>

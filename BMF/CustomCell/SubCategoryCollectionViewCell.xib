@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="subCategoryCell" id="gTV-IL-0wX" customClass="SubCategoryCollectionViewCell" customModule="BMF" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="227" height="265"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="227" height="265"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wrP-ax-tEG" userLabel="Main View">
+                        <rect key="frame" x="0.0" y="0.0" width="227" height="265"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ayam" translatesAutoresizingMaskIntoConstraints="NO" id="FXM-YN-Fjf">
+                                <rect key="frame" x="8" y="15" width="211" height="153"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="211" id="3Yv-Fk-UXM"/>
+                                    <constraint firstAttribute="height" constant="153" id="PMk-pd-0Mp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kambingasjdasjdjkahsdjkahsdjkahdsaksjdsad" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WE-Ny-ywC">
+                                <rect key="frame" x="8" y="176" width="211" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="cDo-yO-ERN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3T-jf-8Di">
+                                <rect key="frame" x="8" y="229" width="211" height="30"/>
+                                <color key="backgroundColor" red="0.33029795222993691" green="0.5966552992299492" blue="0.30617287083979855" alpha="0.84551583904109584" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Lihat Semua">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FXM-YN-Fjf" firstAttribute="leading" secondItem="wrP-ax-tEG" secondAttribute="leading" constant="8" id="0DM-is-Mzu"/>
+                            <constraint firstItem="E3T-jf-8Di" firstAttribute="leading" secondItem="wrP-ax-tEG" secondAttribute="leading" constant="8" id="1vs-mR-mfp"/>
+                            <constraint firstItem="E3T-jf-8Di" firstAttribute="top" secondItem="7WE-Ny-ywC" secondAttribute="bottom" constant="8" id="L2j-H3-ahe"/>
+                            <constraint firstItem="7WE-Ny-ywC" firstAttribute="top" secondItem="FXM-YN-Fjf" secondAttribute="bottom" constant="8" id="MEc-qd-gFb"/>
+                            <constraint firstAttribute="trailing" secondItem="FXM-YN-Fjf" secondAttribute="trailing" constant="8" id="WjS-w2-Lv0"/>
+                            <constraint firstAttribute="trailing" secondItem="E3T-jf-8Di" secondAttribute="trailing" constant="8" id="aMy-8b-3vM"/>
+                            <constraint firstItem="FXM-YN-Fjf" firstAttribute="top" secondItem="wrP-ax-tEG" secondAttribute="top" constant="15" id="ciI-Vs-duP"/>
+                            <constraint firstAttribute="trailing" secondItem="7WE-Ny-ywC" secondAttribute="trailing" constant="8" id="ewR-ZM-Ive"/>
+                            <constraint firstItem="7WE-Ny-ywC" firstAttribute="leading" secondItem="wrP-ax-tEG" secondAttribute="leading" constant="8" id="gls-lm-ZlN"/>
+                            <constraint firstAttribute="bottom" secondItem="E3T-jf-8Di" secondAttribute="bottom" constant="6" id="pkm-MM-cAs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wrP-ax-tEG" secondAttribute="bottom" id="AVV-5H-By2"/>
+                <constraint firstItem="wrP-ax-tEG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WDu-hz-a2M"/>
+                <constraint firstItem="wrP-ax-tEG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gQn-uD-wRp"/>
+                <constraint firstAttribute="trailing" secondItem="wrP-ax-tEG" secondAttribute="trailing" id="yv8-kj-83t"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="263" height="302"/>
+            <connections>
+                <outlet property="brandImageView" destination="FXM-YN-Fjf" id="R5e-rm-DGf"/>
+                <outlet property="descriptionLabel" destination="7WE-Ny-ywC" id="Wky-4C-pJq"/>
+                <outlet property="mainView" destination="wrP-ax-tEG" id="eJi-1a-I8e"/>
+                <outlet property="seeAllButton" destination="E3T-jf-8Di" id="6jE-pN-aLo"/>
+            </connections>
+            <point key="canvasLocation" x="-31.159420289855074" y="155.02232142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ayam" width="1591" height="1417"/>
+    </resources>
+</document>

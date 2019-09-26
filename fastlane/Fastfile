@@ -1,0 +1,40 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "produce ipa file"
+  lane :beta do
+    # add actions here: https://docs.fastlane.tools/actions
+    build_app(scheme: "BMF")
+  end
+
+  desc "bump version patch"
+  lane :version_patch do 
+    increment_version_number(bump_type: "patch")
+  end
+
+  desc "bump version minor"
+  lane :version_minor do 
+    increment_version_number(bump_type: "minor")
+  end
+
+  desc "bump version major"
+  lane :version_major do 
+    increment_version_number(bump_type: "major")
+  end
+
+end
