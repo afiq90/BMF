@@ -104,10 +104,10 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "newsCell", for: indexPath) as! NewsTableViewCell
         
         //Set the theme for cell.mainView and cell.descriptionLabel
-        let currentTheme = ThemeManager.currentTheme()
-        cell.newsView.backgroundColor = currentTheme.backgroundColor
-        cell.newsTitleLabel.textColor = currentTheme.titleTextColor
-        cell.newsDate.textColor = currentTheme.titleTextColor
+//        let currentTheme = ThemeManager.currentTheme()
+//        cell.newsView.backgroundColor = currentTheme.backgroundColor
+//        cell.newsTitleLabel.textColor = currentTheme.titleTextColor
+//        cell.newsDate.textColor = currentTheme.titleTextColor
 
         let news = newsArray[indexPath.row]
         cell.newsTitleLabel.text = news.title

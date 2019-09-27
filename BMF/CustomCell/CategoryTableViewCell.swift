@@ -28,25 +28,8 @@ class CategoryTableViewCell: UITableViewCell {
 //        cellContentView.layer.shadowPath = UIBezierPath(rect: cellContentView.bounds).cgPath
 //        cellContentView.layer.shouldRasterize = true
 //        cellContentView.layer.rasterizationScale = UIScreen.main.scale
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(darkModeEnabled(_:)), name: Notification.Name("darkModeEnabled"), object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(normalModeEnabled(_:)), name: Notification.Name("normalModeEnabled"), object: nil)
 
     }
-    
-    @objc private func darkModeEnabled(_ notification: Notification) {
-        print("category cell darkModeEnabled")
-        ThemeManager.applyTheme(theme: .darkMode)
-        Constant.applyThemeForTableViewCell(with: cellContentView)
-    }
-    
-    @objc private func normalModeEnabled(_ notification: Notification) {
-        print("category cell normalModeEnabled")
-        ThemeManager.applyTheme(theme: .normalMode)
-        Constant.applyThemeForTableViewCell(with: cellContentView)
-        
-    }
-    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -65,8 +48,4 @@ class CategoryTableViewCell: UITableViewCell {
 
     }
     
-    deinit {
-        NotificationCenter.default.removeObserver(self, name: Notification.Name("darkModeEnabled"), object: nil)
-        NotificationCenter.default.removeObserver(self, name: Notification.Name("normalModeEnabled"), object: nil)
-    }
 }

@@ -85,9 +85,9 @@ extension BrandViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "brandCell", for: indexPath) as! BrandTableViewCell
         
         //Set the theme for cell.mainView and cell.descriptionLabel
-        let currentTheme = ThemeManager.currentTheme()
-        cell.cellContentView.backgroundColor = currentTheme.backgroundColor
-        cell.categoryName.textColor = currentTheme.titleTextColor
+//        let currentTheme = ThemeManager.currentTheme()
+//        cell.cellContentView.backgroundColor = currentTheme.backgroundColor
+//        cell.categoryName.textColor = currentTheme.titleTextColor
         
         cell.categoryName.text = filteredmuslimBrands[indexPath.row]
 //        cell.categoryImageview.downloaded(from: muslimBrands.categoryImage)

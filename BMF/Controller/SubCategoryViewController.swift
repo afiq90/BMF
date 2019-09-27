@@ -170,9 +170,9 @@ extension SubCategoryViewController: UICollectionViewDataSource, UICollectionVie
         let cell = subCategoryCollectionView.dequeueReusableCell(withReuseIdentifier: "subCategoryCell", for: indexPath) as! SubCategoryCollectionViewCell
         
         //Set the theme for cell.mainView and cell.descriptionLabel
-        let currentTheme = ThemeManager.currentTheme()
-        cell.mainView.backgroundColor = currentTheme.backgroundColor
-        cell.descriptionLabel.textColor = currentTheme.titleTextColor
+//        let currentTheme = ThemeManager.currentTheme()
+//        cell.mainView.backgroundColor = currentTheme.backgroundColor
+//        cell.descriptionLabel.textColor = currentTheme.titleTextColor
         
         let subcategory = filteredSubCategoryArray[indexPath.item]
         cell.descriptionLabel.text = subcategory.SubCategoryName
