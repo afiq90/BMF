@@ -40,11 +40,11 @@ class NewsViewController: UIViewController {
         
         self.title = "Berita Terkini"
         
-        newsTableView.refreshControl = refreshControl
         //        categoryTableView.alwaysBounceVertical = true
 
         setupTableView()
         addLoadingIndicator()
+        
         
     }
     
@@ -63,6 +63,9 @@ class NewsViewController: UIViewController {
         // register category custom cell to categoryTableView
         let newsCustomCell = UINib(nibName: "NewsTableViewCell", bundle: nil)
         newsTableView.register(newsCustomCell, forCellReuseIdentifier: "newsCell")
+        newsTableView.refreshControl = refreshControl
+        newsTableView.estimatedRowHeight = 250
+        newsTableView.rowHeight = UITableView.automaticDimension
     }
     
     @objc func fetchNewsFromAPI() {
@@ -91,10 +94,10 @@ class NewsViewController: UIViewController {
 
 extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 161
-    }
-    
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 161
+//    }
+   
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return newsArray.count
     }

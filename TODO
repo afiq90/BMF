@@ -14,8 +14,8 @@ TODO
 6) Implement search by brand or sub category ✅
 
 7) Implement OCR then make a request to the DB.
-
-9) Dark Mode for iOS 13
+ 
+9) Dark Mode for iOS 13 ✅
 
 10) Filter by location
 
@@ -34,7 +34,7 @@ TODO
     1) https://stackoverflow.com/questions/37967555/how-can-i-mimic-the-bottom-sheet-from-the-maps-app
     2) https://medium.com/@vialyx/import-uikit-custom-modal-transitioning-with-swift-6f320de70f55
 
-17) Navigate viem to its respected viewcontroller when tapped on push notification (for news vc)
+17) Navigate view to its respected viewcontroller when tapped on push notification (for news vc)
 
 3rd Party Library to use
 ------------------------
@@ -48,15 +48,16 @@ App Landing Page & App Store Screenshot Example
 -----------------------------------------------
 
 To create app landing page we can use github pages, to use github pages we can just fork this repo
-https://emilbaehr.github.io/automatic-app-landing-page/
+https://emilbaehr.github.io/automatic-app-landing-page/ ✅
 
 Can use this screenshot example https://apps.apple.com/app/githawk-for-github/id1252320249
 
-Use this link to generate app store screenshot
+Use this link to generate app store screenshot and promo video
     1) https://shotbot.io
     2) https://www.appstorescreenshot.com
     3) https://theapplaunchpad.com
     4) https://medium.com/appmanager/best-12-tools-to-create-amazing-screenshots-for-your-mobile-apps-2018-1cbf6f8660ba
+    5) rotato.xyz
 
 IDEA
 -----
@@ -64,4 +65,13 @@ IDEA
 1) Can use collection style like this https://github.com/afiq90/CarLensCollectionViewLayout for brands and its information.
 2) Implement simple word games for muslim brands (quiz trivia, puzzle, crossword)
 3) Maybe can add haptic engine https://medium.com/@abhimuralidharan/how-to-add-haptic-feedback-using-taptic-engine-in-ios-swift-424f1ed80665
-4) Implement darkMode for iOS13.. see this link to support backward compability https://noahgilmore.com/blog/dark-mode-uicolor-compatibility/
+4) Implement darkMode for iOS13.. see this link to support backward compability https://noahgilmore.com/blog/dark-mode-uicolor-compatibility/ ✅
+5) Implement this for iOS 13 context menu
+   @available(iOS 13.0, *)
+   override func tableView(_ tableView: UITableView, willPerformPreviewActionForMenuWith configuration: UIContextMenuConfiguration, animator: UIContextMenuInteractionCommitAnimating) {
+       guard let analysis = previewingAnalysis else { return }
+       animator.addCompletion {
+           ResultsViewController.present(analysis: analysis, onViewController: self)
+       }
+       previewingAnalysis = nil
+   }

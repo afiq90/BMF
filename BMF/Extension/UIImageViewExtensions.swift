@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 extension UIImageView {
     func downloaded(from url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFit) {  // for swift 4.2 syntax just use ===> mode: UIView.ContentMode
@@ -23,9 +24,21 @@ extension UIImageView {
             }
             }.resume()
     }
+    
     func downloaded(from link: String, contentMode mode: UIView.ContentMode = .scaleAspectFit) {  // for swift 4.2 syntax just use ===> mode: UIView.ContentMode
         guard let url = URL(string: link) else { return }
         downloaded(from: url, contentMode: mode)
+    }
+    
+    /// https://stackoverflow.com/questions/40793674/kingfisher-and-swift-3-cannot-set-image-with-url
+    func setImage(with urlString: String){
+           guard let url = URL.init(string: urlString) else {
+               return
+           }
+           let resource = ImageResource(downloadURL: url, cacheKey: urlString)
+           var kf = self.kf
+           kf.indicatorType = .activity
+           kf.setImage(with: resource)
     }
 }
 

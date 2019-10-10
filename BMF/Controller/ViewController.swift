@@ -200,7 +200,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         let category = categoryArray[indexPath.row]
         cell.categoryName.text = category.categoryName
         cell.categoryDescription.text = category.categoryDescription
-        cell.categoryImageview.downloaded(from: category.categoryImage)
+//        cell.categoryImageview.downloaded(from: category.categoryImage)
+        cell.categoryImageview.setImage(with: category.categoryImage)
         
         return cell
     }

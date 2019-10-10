@@ -177,7 +177,8 @@ extension SubCategoryViewController: UICollectionViewDataSource, UICollectionVie
         let subcategory = filteredSubCategoryArray[indexPath.item]
         cell.descriptionLabel.text = subcategory.SubCategoryName
         if let imageLink = subcategory.SubCategoryImage {
-            cell.brandImageView.downloaded(from: imageLink)
+//            cell.brandImageView.downloaded(from: imageLink)
+            cell.brandImageView.setImage(with: imageLink)
         }
         
         return cell
@@ -186,7 +187,6 @@ extension SubCategoryViewController: UICollectionViewDataSource, UICollectionVie
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         return CGSize(width: (view.frame.width / 2) - 5, height: 265)
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

@@ -66,6 +66,7 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (6.2.5):
     - GoogleUtilities/Logger
+  - Kingfisher (5.7.1)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
@@ -79,6 +80,7 @@ DEPENDENCIES:
   - Fabric (~> 1.10.2)
   - Firebase/AdMob
   - Firebase/Analytics
+  - Kingfisher (~> 5.0)
   - Siren (from `https://github.com/ArtSabintsev/Siren.git`, branch `swift4.2`)
   - SwiftRater
 
@@ -97,6 +99,7 @@ SPEC REPOS:
     - GoogleDataTransport
     - GoogleDataTransportCCTSupport
     - GoogleUtilities
+    - Kingfisher
     - nanopb
     - SwiftRater
 
@@ -124,10 +127,11 @@ SPEC CHECKSUMS:
   GoogleDataTransport: 91e682bd60a49d3f8f69f2e909a66efaed5a1e7a
   GoogleDataTransportCCTSupport: 6b545f7149111180763dc18c6f372c963de4a310
   GoogleUtilities: e7dc37039b19df7fe543479d3e4a02ac8d11bb69
+  Kingfisher: 176d377ad339113c99ad4980cbae687f807e20fe
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Siren: 4ce39daf1dd13533ef375c2064d6b8726231c521
   SwiftRater: 5abec73b6114d54f1f25e083071b2be1bab7dcda
 
-PODFILE CHECKSUM: c76325e6dec5758b26a870e2ea8c523ea056b320
+PODFILE CHECKSUM: 54856053f507dfcafe51dc4f4d2dd63d0c3b4e67
 
 COCOAPODS: 1.5.3
